@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('../header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            color: black;
+            line-height: 1.6;
+        }
+        section {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        /* Glossary and References specific styles */
+        #glossary dl {
+            margin: 0;
+        }
+        #glossary dt {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #4CAF50;
+        }
+        #glossary dd {
+            margin: 0 0 10px 20px;
+            padding-left: 10px;
+            border-left: 3px solid #4CAF50;
+        }
+        #references ul {
+            list-style: none;
+            padding: 0;
+        }
+        #references li {
+            margin: 10px 0;
+            background: #e8f5e9;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        #references li:hover {
+            background: #d7ffd9;
+        }
+        #references a {
+            text-decoration: none;
+            color: #1a73e8;
+        }
+        #references a:hover {
+            text-decoration: underline;
+        }
+        .particle {
+            position: absolute;
+            background: rgba(0, 255, 0, 0.7);
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: particleAnimation 5s infinite;
+        }
+
+        @keyframes particleAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* random particle positions */
+        .particle1 { width: 10px; height: 10px; top: 10%; left: 10%; animation-delay: 0s; }
+        .particle2 { width: 10px; height: 10px; top: 25%; left: 25%; animation-delay: 0.5s; }
+        .particle3 { width: 8px; height: 8px; top: 15%; left: 70%; animation-delay: 1s; }
+        .particle4 { width: 12px; height: 12px; top: 50%; left: 60%; animation-delay: 1.5s; }
+        .particle5 { width: 5px; height: 5px; top: 75%; left: 85%; animation-delay: 2s; }
+        .particle6 { width: 10px; height: 10px; top: 90%; right: 5%; animation-delay: 0.9s; }
+        .particle7 { width: 10px; height: 10px; top: 20%; left: 40%; animation-delay: 0.9s; }
+        .particle8 { width: 8px; height: 8px; top: 60%; left: 90%; animation-delay: 1.3s; }
+        .particle9 { width: 12px; height: 12px; top: 30%; left: 5%; animation-delay: 1.2s; }
+        .particle10 { width: 5px; height: 5px; top: 80%; left: 20%; animation-delay: 1s; }
+        .particle11 { width: 10px; height: 10px; top: 35%; left: 15%; animation-delay: 1.4s; }
+        .particle12 { width: 12px; height: 12px; top: 55%; left: 75%; animation-delay: 1.6s; }
+        .particle13 { width: 8px; height: 8px; top: 70%; left: 35%; animation-delay: 1.8s; }
+        .particle14 { width: 5px; height: 5px; top: 45%; right: 10%; animation-delay: 2.1s; }
+        .particle15 { width: 6px; height: 6px; top: 25%; left: 80%; animation-delay: 2.3s; }
+
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <!-- Resources Content -->
+    <section id="glossary">
+        <h2>Glossary</h2>
+        <dl>
+            <dt>Nucleotide</dt>
+            <dd>A molecule that is composed of a sugar connected to a nitrogenous base (adenine, guanine, cytosine, uracil, thymine) and a phosphate group that make up the building blocks of both DNA and RNA.</dd>
+            
+            <dt>DNA</dt>
+            <dd>DNA or deoxyribonucleic acid is a molecule composed of nucleotide pairs that resemble two backbones or strands of sugars and phosphates that are connected to each other by pairs of nitrogenous bases. These molecules store genetic information such as the instructions for making a protein or RNA molecule.</dd>
+            
+            <dt>RNA</dt>
+            <dd>RNA or ribonucleic acid is a molecule that is typically composed of a single strand of sugars and phosphates, which are each connected to [a] nitrogenous base. RNA serves many roles including protein synthesis and regulating gene expression in living organisms, as well as storing genetic material for RNA viruses.</dd>
+            
+            <dt>Biological Sequence</dt>
+            <dd>A continuous sequence of nucleotides or amino acids.</dd>
+            
+            <dt>Galaxy</dt>
+            <dd>An open source, web-based platform for data intensive biomedical research.</dd>
+            
+            <dt>FastQ File</dt>
+            <dd> A formatted text file with sequence data and their corresponding quality scores. </dd>
+            
+            <dt>Preprocessing pipeline</dt>
+            <dd>A framework for preparing nucleotide sequences for processing and analysis containing a variety of third-party software tools and […] scripts wrapped into specific workflow steps.</dd>
+            
+            <dt>RNA-Sequencing</dt>
+            <dd>A sequencing technique that focuses on RNA molecules to provide information about gene expression and transcription.</dd>
+            
+            <dt>ATAC-Sequencing</dt>
+            <dd>ATAC-Sequencing (or assay for transposase-accessible chromatin with sequencing) is a method for mapping chromatin accessibility (which is the level of physical access to the chromosomal DNA structure that is determined by its variable composition, structure, and dynamics). Through this mapping,  ATAC-Sequencing can provide a picture of the regulation of a range of genomic processes such as DNA repair and replication.</dd>
+            
+            <dt>WGBS-Sequencing</dt>
+            <dd>Whole Genome Bisulfite Sequencing is a sequencing technique that involves treating genomic DNA with sodium bisulfite prior to sequencing in order to map the locations of chemical modifications called methylation. This methylation and the locations at which it occurs play an important role in the regulation and expression of genome architecture and activity.</dd>
+            
+            <dt>HIPAA</dt>
+            <dd>The Health Insurance Portability and Accountability Act is a federal law in the United States that regulates the handling of an individuals protected health information (PHI).</dd>
+            
+            <dt>GDPR</dt>
+            <dd>The General Data Protection Regulation is an EU enacted regulation that deals with the use, collection, and storage of the personal identifiable information (PII) of EU citizens.</dd>
+            
+            <dt>FDA</dt>
+            <dd>The United States Food and Drug administration.</dd>
+            
+        </dl>
+        
+    </section>
+
+    <section id="references">
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://www.grandviewresearch.com/horizon/outlook/sequencing-market-size/global" target="_blank">Global Sequencing Market Size & Outlook, 2023-2030</a></li>
+            <li><a href="https://knowledge.illumina.com/software/general/software-general-reference_material-list/000002211" target="_blank">FASTQ Files Explained</a></li>
+            <li><a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2020.00817/full" target="_blank">Impact on Analyzing Next Generation Sequencing Data</a></li>
+            <li><a href="https://www.linkedin.com/pulse/demystifying-bioinformatics-pipelines-enthought?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank">Demystifying Bioinformatics Pipelines</a></li>
+            <li><a href="https://compgenomr.github.io/book/data-preprocessing.html#data-transformation" target="_blank">Data Preprocessing</a></li>
+            <li><a href="https://panko.com/HumanErr/Software.html" target="_blank">Human Error in Software Development and Inspection</a></li>
+            <li><a href="https://www.cd-genomics.com/resource-comprehensive-overview-high-throughput-sequencing.html#guide1" target="_blank">Information on High-Throughput Sequencing</a></li>
+            <li><a href="https://www.astera.com/type/blog/data-preprocessing/" target="_blank">What is Data Preprocessing</a></li>
+            <li><a href="https://cpl.thalesgroup.com/software-monetization/protecting-software-intellectual-property" target="_blank">Software Intellectual Property</a></li>
+            <li><a href="https://www.totalhipaa.com/gdpr-and-hipaa/" target="_blank">Data Privacy Regulations</a></li>
+            <li><a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/computer-software-assurance-production-and-quality-system-software" target="_blank">Computer Software Assurance for Production and Quality System Software</a></li>
+            <li><a href="https://www.sciencedirect.com/topics/computer-science/biological-sequence" target="_blank">Biological Sequences</a></li>
+            <li><a href="https://usegalaxy.org/" target="_blank">Galaxy</a></li>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4863231/" target="_blank">RNA-Sequencing</a></li>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9683059/" target="_blank">Chromatin Accessibility</a></li>
+            <li><a href="https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/bs-seq-bisulfite-seq-wgbs.html" target="_blank">WGBS-Sequencing</a></li>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8009048/" target="_blank">Cytosine Methylation</a></li>
+            <li><a href="https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid" target="_blank">DNA</a></li>
+            <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK558999/" target="_blank">RNA</a></li>
+        </ul>
+    </section>
+    
+    
+    <div class="particle particle1"></div>
+    <div class="particle particle2"></div>
+    <div class="particle particle3"></div>
+    <div class="particle particle4"></div>
+    <div class="particle particle5"></div>
+    <div class="particle particle6"></div>
+    <div class="particle particle7"></div>
+    <div class="particle particle8"></div>
+    <div class="particle particle9"></div>
+    <div class="particle particle10"></div>
+    <div class="particle particle11"></div>
+    <div class="particle particle12"></div>
+    <div class="particle particle13"></div>
+    <div class="particle particle14"></div>
+    <div class="particle particle15"></div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../nicepage.css" media="screen">
+  <link rel="stylesheet" href="Team.css" media="screen">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('../header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+</body>
+</html>
+
+
+<section class="u-clearfix u-palette-5-dark-3 u-section-1" id="sec-d3ff">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <div class="u-layout-col">
+                    <div class="u-size-60">
+                        <div class="u-layout-col">
+                            <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
+                                <div class="u-container-layout u-container-layout-1">
+                                    <p class="u-align-center u-text u-text-default u-text-2" style="font-size: 1.8em;">
+                                        Imagine a world where researchers can process complex biological data effortlessly. At Group Green, we’re revolutionizing high-throughput sequencing by providing an intuitive web portal known as DataSeq, that automates data preprocessing for RNA-, ATAC-, and WGBS-Sequencing.
+                                        <br><br>
+                                        With a user-friendly interface, our platform eliminates the need for advanced technical skills, allowing scientists to focus on what truly matters: analyzing data and driving discoveries. No more cumbersome scripts or complex setups—just simple checkbox selections to handle large datasets quickly and efficiently.
+                                        <br><br>
+                                        As the demand for streamlined preprocessing tools grows, DataSeq is created to empower researchers globally, enhance collaboration, and accelerate breakthroughs in biological research. Join us in transforming how scientists work with sequencing data!
+                                    </p>
+                                    <h2 class="u-align-center u-text u-text-default u-text-1">Meet The Team</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="team-section">
+        <div class="team-container">
+            <div class="team-member">
+                <h3>Bashar Fakhreddin</h3>
+                <img src="/members/bashar.png" alt="Bashar Fakhreddin" class="member-image">
+                <p class="member-bio">Bashar is a junior pursuing his bachelor’s degree in Computer Science. He works as a research assistant under Dr. Sun, with the topic of machine learning in the biomedical field. He enjoys playing soccer, working out, and playing video games in his free time.</p>
+            </div>
+            <div class="team-member">
+                <h3>Lee Logan</h3>
+                <img src="/members/lee.png" alt="Lee Logan" class="member-image">
+                <p class="member-bio">Lee Logan is a senior majoring in Computer science. He worked with Dr. Qing Le and her students at Hampton University to complete a research design project involving drone delivery for Amazon. He graduated from the Governor’s School for Science and Technology in 2023 in the computer sciences strand. In his free time, he enjoys playing video games, string instruments, and creating cosplay.</p>
+            </div>
+            <div class="team-member">
+                <h3>James Gillis</h3>
+                <img src="/members/james.png" alt="James Gillis" class="member-image">
+                <p class="member-bio">James is a senior at Old Dominion University pursuing a bachelor’s degree in Computer Science. He is currently employed at a pizza and grill restaurant looking to become a software engineer. His favorite hobbies include Gaming, Reading, and Coding.</p>
+            </div>
+            <div class="team-member">
+                <h3>Griffin Kline</h3>
+                <img src="/members/griffin.png" alt="Griffin Kline" class="member-image">
+                <p class="member-bio">Griffin is a senior at ODU majoring in Computer Science. He is currently working in the agriculture industry and hopes to become a Software Developer after graduating. In his free time, he enjoys playing Rust, watching anime, and building models.</p>
+            </div>
+            <div class="team-member">
+                <h3>Bryan Hawickhorst</h3>
+                <img src="/members/bryan.png" alt="Bryan Hawickhorst" class="member-image">
+                <p class="member-bio">Bryan Hawickhorst is a senior majoring in computer science. He is from Virginia Beach, Virginia. He works at ODU’s biological and biomedical informatics lab under Dr. Jing He. In his free time, Bryan enjoys climbing, surfing, and photography.
+                </p>
+            </div>
+            <div class="team-member">
+                <h3>Thomas Carey</h3>
+                <img src="/members/thomas.png" alt="Thomas Carey" class="member-image">
+                <p class="member-bio">Thomas is a senior majoring in Computer Science at ODU. He is currently employed at EyeGaze, where he is working on a suite of programs that utilize eye tracking.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

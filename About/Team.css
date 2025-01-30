@@ -1,0 +1,134 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 830px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 830px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 44px auto 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 705px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    position: relative;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 684px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 443px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+}
+
+.u-section-1 .u-container-layout-1 h2 {
+  margin-top: 150px;
+  font-size: 65px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 531px;
+  }
+}
+.team-section {
+  text-align: center;
+  margin: 10px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px; /* Space between team members */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.team-member {
+  width: 30%;
+  text-align: center;
+  color:olivedrab;
+  font-weight: bold;
+}
+.team-member h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.member-image {
+  width: 70%;
+  height: 55%;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.member-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+  border: 2px solid #478ac9;
+}
+
+
+.member-image {
+  filter: grayscale(0.2);
+}
+
+
+.member-image:hover {
+  filter: grayscale(0);
+}
+
+
+.member-bio {
+  margin-top: 5px;
+  font-size: 1em;
+  color: #555;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.member-bio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.member-bio {
+  border: 1px solid gray;
+}
+
+.team-image {
+  display: block; /* Ensures the image behaves as a block element */
+  margin: 0 auto; /* Centers the image and adds space below it */
+  width: 40%; /* Adjust the width as needed */
+  max-width: 600px; 
+}

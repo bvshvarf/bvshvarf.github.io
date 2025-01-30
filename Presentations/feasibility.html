@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('../header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            animation: backgroundAnimation 10s infinite alternate; /* Animation for background color change */
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: slategray; }
+            25% { background-color: #333333; } 
+            50% { background-color: grey; } 
+            75% { background-color: gray; } 
+            100% { background-color: #2A3439; } 
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-button:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <!-- Presentations Content -->
+    <section id="societal-problem">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h2 class="u-align-center u-text u-text-2" style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-top: 20px; font-size: 2em; text-decoration: underline;">Societal Problem</h2>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSef9fCP7QnD9TdelWdXJJUfd0-yCmtwzU1rUYvz3F-RXjDnrjkp54g48kq6Ep2kJ0yPcs9T1V08e4S/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a class="download-button" href="https://docs.google.com/presentation/d/16Z_A9mva-2kXCdPTFcxwKEGc35gwSLLWn7oyarhP6XY/export/pdf">Download</a>
+        </div>
+    </section>
+
+    <section id="feasibility1">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h2 class="u-align-center u-text u-text-2" style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-top: 20px; font-size: 2em; text-decoration: underline;">Feasibility v1.0</h2>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQgrzh1dQiV-083vRVsQC7l7yo2r9Y4JQeQlPjTf0mi9ExCle423nOhFvlBa3u152wKigIlWXeiHT4m/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a class="download-button" href="https://docs.google.com/presentation/d/1AeIaAWyI2YngcFwWxcfM3sNlTYpYSaCjwTwP2odeV_Y/export/pdf">Download</a>
+        </div>
+    </section>
+
+    <section id="feasibility2">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h2 class="u-align-center u-text u-text-2" style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-top: 20px; font-size: 2em; text-decoration: underline;">Feasibility v2.0</h2>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSDCh4H83Q5g8ZtaaZMi8kbRD5t_ibTtLws65PyPGGYKQeKxE2-k6tQvU_Hc8B_0nc2wf8WmBALfyHb/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a class="download-button" href="https://docs.google.com/presentation/d/11lIZZRPuZv4HQ0QwQNSFeJ7pTvcebhOOzNmRf5Sxtas/export/pdf">Download</a>
+        </div>
+    </section>
+
+    <section id="design">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h2 class="u-align-center u-text u-text-2" style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-top: 20px; font-size: 2em; text-decoration: underline;">Design</h2>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSIRlt1VDNkNpkP0dwuoAKH2X-dkW8JMN68LpSUf-r79O7GFDgDp1dSWKy4BzzXFut0PY21EUKBLbRc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a class="download-button" href="https://docs.google.com/presentation/d/11lIZZRPuZv4HQ0QwQNSFeJ7pTvcebhOOzNmRf5Sxtas/export/pdf">Download</a>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
