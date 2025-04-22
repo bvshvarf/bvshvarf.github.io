@@ -61,6 +61,33 @@
         #references li:hover {
             background: #d7ffd9;
         }
+        section:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .user-story {
+            background: #e0f7fa;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .user-story:hover {
+            background: #b2ebf2;
+            border-left: 5px solid #388e3c;
+        }
         #references a {
             text-decoration: none;
             color: #1a73e8;
@@ -75,6 +102,19 @@
             opacity: 0.8;
             animation: particleAnimation 5s infinite;
         }
+        #reports ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centers the entire list */
+}
+
+#reports li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
 
         @keyframes particleAnimation {
             0% {
@@ -176,6 +216,49 @@
                         <p style="font-weight: bold; text-align: center; margin-top: 10px;">Report #10</p>
                     </a>
                 </li>
+                <li style="display: inline-block; text-align: left;">
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vRN4IFe97ALPAnRngsGArLiF2Rpjr7hZFcdFD35gq5-KibFsUS35QYmIkfU3Ee4W5hoDwS6pFwqPP1l/pub" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                        <img src="/Prototype/file2.jpg" alt="Weekly Report" style="width: 150px; height: auto; display: block;">
+                        <p style="font-weight: bold; text-align: center; margin-top: 10px;">Report #11</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="user-stories">
+        <h2>User Stories</h2>
+        
+        <div class="user-story">
+            <strong>As a Dataseq Guest:</strong>
+            <ul>
+                <li>Submit a FastQ file for preprocessing with RNA, WGBS, or ATAC sequencing.</li>
+                <li>Select the specific preprocessing pipeline via radio buttons.</li>
+                <li>Option to sign up for an account displayed on the homepage.</li>
+                <li>Download finished preprocessed data easily.</li>
+            </ul>
+        </div>
+
+        <div class="user-story">
+            <strong>As a Dataseq User:</strong>
+            <ul>
+                <li>Save configurations to settings so I don't have to set them again.</li>
+                <li>Personalize the dashboard view on the web application.</li>
+                <li>Understand visuals to better navigate the web application.</li>
+                <li>Provide critique and suggestions for design and experience.</li>
+                <li>Get help with questions or difficulties.</li>
+            </ul>
+        </div>
+
+        <div class="user-story">
+            <strong>As a Dataseq Administrator:</strong>
+            <ul>
+                <li>Monitor security to ensure data protection.</li>
+                <li>Receive user activity logs for tracking actions.</li>
+                <li>Limit access control based on the user's role.</li>
+                <li>Easily manage user quotas.</li>
+                <li>Set default preprocessing parameters to reduce repeated work.</li>
+                <li>Receive a detailed report on preprocessing errors.</li>
             </ul>
         </div>
     </section>
